@@ -8,7 +8,7 @@ The ROCm software stack is open-source and, thus, [publicly available](github.co
 
 The AMD ROCr System Runtime is language independent and makes heavy use of the Heterogeneous System Architecture ([HSA](https://hsafoundation.com/wp-content/uploads/2021/02/HSA-Runtime-1.2.pdf)) Runtime API which is a well-established, not-for-profit industry standard. This approach provides a rich foundation to execute programming languages, such as HIP and OpenMP, and/or develop new Domain Specific Languages on the top of the AMD ROCr System Runtime.
 
-I am going to demostrate how to setup your first debugging session for the AMD runtime libraries in this tutorial. I believe this is going to help you to start your exciting journey to the ROCm software ecosystem.
+I am going to demonstrate how to setup your first debugging session for the AMD runtime libraries in this tutorial. I believe this is going to help you to start your exciting journey to the ROCm software ecosystem.
 
 ## Preparation Steps
 
@@ -195,7 +195,7 @@ Now, we are ready to start the debugging session. Type `Ctrl+Shift+D` followed b
 
 ![image](.img/img4.jpg)
 
-If all steps are done correctly your vscode session will look like the image above. On the left side, you will see all local variables and their current values (which you can inspect), as well as the current state of the call stack at the bottom. You can wall through the call stack and investigate all function calls which brought us to `rocvirtual.cpp:3320`.
+If all steps are done correctly your vscode session will look like the image above. On the left side, you will see all local variables and their current values (which you can inspect), as well as the current state of the call stack at the bottom. You can walk through the call stack and investigate all function calls which brought us to `rocvirtual.cpp:3320`.
 
 At this point, you have all bits and pieces to continue your research or investigation regarding the AMD's Common Language Runtime libraries or HSA. You can add new functionalities to the runtime libraries or/and modify something, re-compile and test them. 
 
