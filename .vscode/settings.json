@@ -1,0 +1,19 @@
+{
+  "files.watcherExclude": {
+      "**/.ccls-cache/**": true,
+      "**/.cache/**": true,
+      "**/.clangd/**": true,
+      "**/.git/objects/**": true,
+      "**/.git/rr-cache/**": true,
+      "${workspaceFolder}/build/**": true
+  },
+  "cmake.configureOnOpen": false,
+  "clangd.path": "/usr/bin/clangd",
+  "clangd.arguments": [
+      "-log=verbose",
+      "-pretty",
+      "--background-index",
+      "--header-insertion=never",
+      "--compile-commands-dir=${workspaceFolder}/clr/build"],
+  "C_Cpp.intelliSenseEngine": "disabled"
+}
